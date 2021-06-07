@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDEEEAS</title>
+
+  <link rel="stylesheet" href="Style/CSS/landing.css">
+  <link rel="stylesheet" href="Style/CSS/icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript"></script>
+</head>
+
+<style>
+  .countdownContainer {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    /* right: 40%; */
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background: green;
+    padding: 10px;
+    box-shadow: 0 0 5px 3px;
+  }
+
+  .broucherbutton {
+
+    left: 50%;
+  }
+
+  .info {
+    font-size: 90px;
+  }
+
+  .headding {
+    font-size: 50px;
+  }
+
+  @media only screen and (max-width:970px) {
+    .headding {
+      padding-bottom: -400px;
+      ;
+    }
+
+    #i1 {
+      width: 75px;
+      height: 75px;
+    }
+
+    #i2 {
+      width: 75px;
+      height: 75px;
+    }
+
+    #i3 {
+      width: 90px;
+      height: 75px;
+    }
+
+    #i4 {
+      width: 70px;
+      height: 70px;
+    }
+
+    #days {
+      font-size: 30px;
+    }
+
+    #minutes {
+      font-size: 30px;
+    }
+
+    #seconds {
+      font-size: 30px;
+    }
+
+    #hours {
+      font-size: 30px;
+    }
+
+    #d1,
+    #d2,
+    #d3 {
+      font-size: 30px;
+    }
+
+    #schedule {
+      padding-top: 240px;
+    }
+  }
+</style>
+
+<body>
+
+  <div class="jumbotron-fluid justify-content-center cont">
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+
+    <div class="topnav nav nav-bar fixed-top" id="myTopnav">
+      <a href="#home">Home</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#domains">Events</a>
+      <a href="contactUs.html">About Us</a>
+      <!-- <a href="registration.html">Register <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
+
+    </div><br><br><br><br><br>
+    <!-- <div class="row">
+      <div class="col md-3">
+        <img id="i1" src="sit.png" alt="SIT LOGO" width="120px" height="100px">
+      </div>
+      <div class="col md-3">
+        <img id="i3" src="ieee-bangalore.png" alt="IEEE BANGLORE SECTION LOGO" width="200px" height="100px">
+      </div>
+      <div class="col md-3">
+        <img id="i5" src="emb.png" alt="EMB LOGO" width="200px" height="110px">
+      </div>
+      <div class="col md-3">
+        <img id="i6" src="photonics.png" alt="IEEE PHOTONICS LOGO" width="200px" height="110px">
+      </div>
+      <div class="col md-3">
+        <img id="i4" src="WI.png" alt="WIE LOGO" width="130px" height="90px">
+      </div>
+      <div class="col md-3">
+        <img id="i2" src="ieee.png" alt="IEEE LOGO" width="150px" height="80px">
+      </div>
+    </div> -->
+    <div class="mainlogo">
+      <img src="Photos/Events/mainlogo3.png" alt="Mainlogo">
+    </div>
+    <br>
+    <section id="home">
+      <div class="nav-head" data-aos="fade-down">IdEEEas&nbsp;2k21</div>
+      <!-- <div class="nav-head" data-aos="fade-down">2k21</div> -->
+      <h3 class="homep text-break" data-aos="fade-right" style="font-size:x-large;">A national level technical
+        symposium<br>An arena for students and professionals to flaunt their technical skills, <br> share knowledge and
+        network with people with different domain.</h3>
+
+      <div class="timer " data-aos="fade-left">
+        <!-- <h2 class="lastDay ">Last Day to register 25/June/2021</h2> -->
+        <br>
+        <h2 class="theDate text-break"></h2>
+      </div>
+      <div class="wieInfo text-break" data-aos="fade-right">
+
+
+        <div id="removediv">
+
+          <h1 id="eventstart" class="headding" style="font-size: 50px;">Event Starts in..... </h1>
+
+          <table class="mytable" style="margin-left: auto; margin-right: auto;">
+            <!-- <tr class="info">
+              <td colspan="4">Event Starts in..... </td>
+          </tr> -->
+            <tr class="info">
+              <td id="days"></td>
+              <td id="d1">:</td>
+              <td id="hours"></td>
+              <td id="d2">:</td>
+              <td id="minutes"></td>
+              <td id="d2">:</td>
+              <td id="seconds"></td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Days</h2>
+              </td>
+              <td>:</td>
+              <td>
+                <h2>Hours</h2>
+              </td>
+              <td>:</td>
+              <td>
+                <h2>Minutes</h2>
+              </td>
+              <td>:</td>
+              <td>
+                <h2>Seconds</h2>
+              </td>
+            </tr>
+          </table>
+          <div class="mydiv">
+            <h1 id="zerocontent" style="color: white;font-size: 50px;"></h1>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  </section>
+
+<div class="ScheduleMain">
+  <h1 id="schedule" class="text-center" data-aos="fade-right" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Schedule</h1>
+</div>
+  
+  <!-- schedule -->
+  <section id="timeline" data-aos="fade-up">
+
+    <article data-aos="fade-up">
+      <div class="inner">
+        <span class="date">
+          <span class="day">7<sup>th</sup></span>
+          <span class="month">June</span>
+          <span class="year">2021</span>
+        </span>
+        <div class="eventHead">Registration Start</div>
+        <p class="text-break">Team/Individual can register themselves for individual events by submitting details.</p>
+      </div>
+    </article>
+    <article data-aos="fade-up">
+      <div class="inner">
+        <span class="date">
+          <span class="day">26<sup>th</sup></span>
+          <span class="month">June</span>
+          <span class="year">2021</span>
+        </span>
+        <div class="eventHead">Day 1 Events</div>
+        <p class="text-break">Orientation, Presentario, Fresher's Event, Trademark, Ideathon, C-Nario.</p>
+      </div>
+    </article>
+    <article data-aos="fade-up">
+      <div class="inner">
+        <span class="date">
+          <span class="day">27<sup>th</sup></span>
+          <span class="month">June</span>
+          <span class="year">2021</span>
+        </span>
+        <div class="eventHead text-break">Day 2 Events</div>
+        <p class="text-break">Hackathon, Photographia, Rectifier, Debate.</p>
+      </div>
+    </article>
+    <article data-aos="fade-up">
+      <div class="inner">
+        <span class="date">
+          <span class="day">27<sup>th</sup></span>
+          <span class="month">June</span>
+          <span class="year">2021</span>
+        </span>
+        <div class="eventHead">Prize Distribution</div>
+        <p class="text-break">Prizes will be distributed to the winners of respective events.</p>
+      </div>
+    </article>
+  </section>
+  <h1 id="domains" class="text-center" data-aos="fade-up" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Events</h1>
+  <section>
+    <!-- <h1>Day 1</h1> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Presentario</h2>
+          <a href="presentario.html"><img src="Photos/Events/PaperPresentation.jpeg" alt="Not" width="300px" height="200px"></a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Freshers Event</h2>
+          <a href="Freshers.html"><img src="Photos/Events/Freshers_inIEEEzio.png" alt="Not" width="300px" height="200px"></a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Trademark</h2>
+          <a href="Trademark.html"><img src="Photos/Events/trademark2.jpg" alt="Not" width="300px" height="200px"></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Ideathon</h2>
+          <a href="ideathon.html"><img src="Photos/Events/ideathon.png" alt="Not" width="300px" height="200px"></a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">C-Nario</h2>
+          <a href="cnario.html"><img src="Photos/Events/cnario1.png" alt="Not" width="300px" height="200px"></a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Hackathon</h2>
+          <a href="hackathon.html"><img src="Photos/Events/hack_tile.png" alt="Not" width="300px" height="200px"></a>
+        </div>
+      </div>
+    </div><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Photographia</h2>
+          <a href="photographia.html"><img src="Photos/Events/Photography.jpg" alt="Not" width="300px" height="200px"></a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Rectifier</h2>
+          <a href="rectifier.html"><img src="Photos/Events/rectifier.png" alt="Not" width="300px" height="200px"></a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <h2 style="color:white">Debate</h2>
+          <a href="debate.html"><img src="Photos/Events/debating.png" alt="Not" width="300px" height="200px"></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="broucherbutton">
+      <a href="cnario_Brochure.pdf" target="_blank" class="btn btn-info btn-lg" download>Download Brochure for
+        IdEEEas</a>
+    </div> -->
+  </section>
+  <br><br>
+  <footer>
+
+    <div>
+      <h5>Made with <span><i class="fa fa-heart" id="heart" aria-hidden="true"></i> </span> by <span> <a
+            href="https://edu.ieee.org/in-sit/" target="_blank">IEEE_SIT_SB</a></span></h5>
+    </div>
+  </footer>
+
+
+
+  <script src="Style/JS/index1.js"></script>
+  <script>
+    function timezero() {
+      document.getElementById("zerotime").innerHTML = "Hello!!";
+    }
+    function countdown() {
+      var now = new Date();
+      var eventDate = new Date(2021, 5, 26, 09, 00, 00, 00);
+      var currentTime = now.getTime();
+      // console.log(currentTime);
+      var eventTime = eventDate.getTime();
+      // console.log(eventTime);
+
+      var remTime = eventTime - currentTime;
+
+      var s = Math.floor(remTime / 1000);
+      var m = Math.floor(s / 60);
+      var h = Math.floor(m / 60);
+      var d = Math.floor(h / 24);
+
+      h %= 24;
+      m %= 60;
+      s %= 60;
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+      var dd = parseInt(d);
+      var hh = parseInt(h);
+      var mm = parseInt(m);
+      var ss = parseInt(s);
+      if (dd <= 0 && hh <= 0 && mm <= 0 && ss <= 0) {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("days").innerText = "00";
+
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+        // document.getElementById("days").setAttribute("visible","false");
+        // document.getElementsById("removediv").style.display="none";
+        document.getElementById("zerocontent").innerHTML = "Event is live now!!!"
+      }
+      else {
+        document.getElementById("days").textContent = d;
+        document.getElementById("days").innerText = d;
+
+        document.getElementById("hours").innerText = h;
+        document.getElementById("minutes").innerText = m;
+        document.getElementById("seconds").innerText = s;
+
+        setTimeout(countdown, 1000);
+      }
+
+    }
+    countdown();
+  </script>
+</body>
+
+</html>

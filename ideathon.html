@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideathon</title>
+    <link rel="stylesheet" type="text/css" href="Style/CSS/events.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    @media only screen and (max-width:970px) {
+        .container {
+            text-align: center;
+        }
+
+        #vid {
+            width: 360px;
+            height: 300px;
+        }
+    }
+</style>
+
+<body>
+    <div class="jumbotron-fluid justify-content-center cont">
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+        <div class="topnav nav nav-bar fixed-top" id="myTopnav">
+            <a href="index.html">Home</a>
+            <!-- <a href="registration.html">Register</a> -->
+        </div><br><br>
+        <div class="container">
+            <div>
+                <center>
+                    <video id="vid" width="1000" height="350" controls autoplay muted loop>
+                        <source src="Videos/IDEATHON.mp4" type="video/mp4">
+                    </video>
+                </center>
+            </div>
+            <br><br><br>
+            <center>
+                <h2>IDEATHON</h2>
+                <div>
+                    <p style="font-size: x-large;text-align: justify;">Ideathon 2021 will be a day-long event where
+                        participants will be provided
+                        with a problem statement to which they will be proposing a suitable and
+                        economically viable model for tackling the issue. The aim of the event is to
+                        innovate and gather different ideas through these models and then
+                        implement them.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">Entry Fee: Rs.150/- per team.(Only
+                                selected teams of round 1 will be asked to pay the registration fee.)</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">20% Discount will be provided to IEEE
+                                Membership holders.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">All registered candidates will get the
+                                confirmation mail.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-size: x-large;text-align: justify;">
+                    <h2 style="text-align: left;">Rules:</h2>
+                    <ul>
+                        <div>
+                            <h2 style="text-align: left;">Round 1 - Abstract submission</h2>
+                        </div>
+                        <li>Participants will submit an abstract and top 20 teams will be selected.</li>
+                        <li>A deadline will be provided within which all abstracts need to be submitted.</li>
+                        <!-- <li>Only selected teams after abstract scrutiny will be asked to pay the registration fee.</li> -->
+                        <!-- <li>REGISTRATION FEE - 150/-</li> -->
+                        <div>
+                            <h2 style="text-align: left;">Round 2 - Marketing</h2>
+                        </div>
+                        <li>The selected teams will create a short advertisement (maximum 45 seconds) to market their
+                            product.</li>
+                        <li>This can be done using basic video editing software or apps available.</li>
+                        <li>Teams will be given suitable timeline for submission.</li>
+                        <li>Based on the effectiveness of the advertisement the final 7 teams will be shortlisted.</li>
+                        <div>
+                            <h2 style="text-align: left;">Round 3 - Presentation</h2>
+                        </div>
+                        <li>The final 7 teams will give a presentation about their idea which will include market
+                            analysis, feasibility, scalability etc.</li>
+                        <li>The team which presents the best will be adjudged winners.</li>
+                        <br>
+                        <b>NOTE</b>
+                        <li>Idea submission must be in the specfied format only.</li>
+                        <li>The ideas from all different themes will be allowed.</li>
+                        <li>Plagiarism of any kind will lead to disqualification.</li>
+                        <li>The decision made by the judges and the organizing committee will be considered final.</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="Brouchers/ideathon_brochure.pdf" class="btn btn-info btn-lg" target="_blank" download>
+                        Download Brochure</a>
+                    <a href="https://forms.gle/KTn9S8J7xpx5FsWu5" target="_blank" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-log-in"></span> Register Here
+                    </a>
+                    <!-- <input type="submit" name="submit" value="Register Here" class="btn btn-success"><p><span class="glyphicon glyphicon-hand-left"></span></p> -->
+                </div>
+                <div class="Finalone">
+                    <div style="font-size: x-large;text-align: justify;">
+                        <h4 style="text-align: left;">Student Coordinators:</h4>
+                        <ul>
+                            <li>Shradha - 9110879635</li>
+                            <li>Teju - 8073648456</li>
+                        </ul>
+                    </div>
+                    <div><br>
+                        <h4>Contact us at</h4>
+                        <h5><i><a href="mailto:ideathon.ideeeas@gmail.com">ideathon.ideeeas@gmail.com</a></i>
+                        </h5>
+                    </div>
+                </div>
+
+            </center>
+
+        </div>
+        <script src="Style/JS/event.js"></script>
+</body>
+
+</html>
