@@ -693,10 +693,16 @@ padding: 0.4%;
 
 .two{
     position: absolute;
-/*     top: 160%; */
+    /* top: 200%; */
     left:24%;
+    /* bottom: 5%; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/* .ContactLast .HeadingReachus h2{
+  font-size: 45px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+} */
 @media screen and (max-width:700px)
 {
   .two h2{
@@ -707,14 +713,14 @@ padding: 0.4%;
       flex-direction: column;
       /* position: absolute; */
       
-      left: 40%;
+      left: 30%;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .two {
     left: 3%;
     bottom: 3%;
     top: 140%;
-  }
+  } 
 }
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 700px) {

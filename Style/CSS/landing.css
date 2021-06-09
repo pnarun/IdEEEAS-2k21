@@ -522,6 +522,13 @@ section#timeline article:nth-child(4) div.inner div.eventHead:after {
   /* font-family: 'Dela Gothic One','Rakkas';  */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.topnav-right{
+  float: right;
+  padding: 1%;
+  text-align: center;
+}
+
 @media screen and (max-width:700px)
 {
   .topnav a{font-size: 17px;
