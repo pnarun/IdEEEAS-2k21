@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Photographia</title>
-        <link rel="stylesheet" type="text/css" href="Style/CSS/events.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script type="text/javascript"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <style>
-        @media only screen and (max-width:970px){
-            .container{
-                text-align: center;
-            }
-            #vid{
-                width: 360px;
-                height: 300px;
-            }
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographia</title>
+    <link rel="stylesheet" type="text/css" href="Style/CSS/events.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    @media only screen and (max-width:970px) {
+        .container {
+            text-align: center;
         }
-    </style>
-    <body>
-         <div class="jumbotron-fluid justify-content-center cont"  >
-        <i class="fa fa-circle-thin fa-2x" aria-hidden="true" ></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+
+        #vid {
+            width: 360px;
+            height: 300px;
+        }
+    }
+</style>
+
+<body>
+    <div class="jumbotron-fluid justify-content-center cont">
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
         <div class="topnav nav nav-bar fixed-top" id="myTopnav">
             <a href="index.html">Home</a>
             <!-- <a href="registration.html">Register</a> -->
@@ -60,42 +66,58 @@
         <div class="container">
             <div>
                 <center>
-                    <video id="vid" width="1000" height="400" controls autoplay muted loop><source src="Videos/PHOTO.mp4" type="video/mp4"></video>
+                    <video id="vid" width="1000" height="400" controls autoplay muted loop>
+                        <source src="Videos/PHOTO.mp4" type="video/mp4">
+                    </video>
                 </center>
             </div>
             <br><br><br>
             <center>
                 <h2>PHOTOGRAPHIA</h2>
                 <div>
-                    <p style="font-size: x-large;text-align: justify;">“Good dreaming is what leads to good photographs.” 
-                        So here comes the exciting and interesting event you have ever 
-                        come across. Photographia is an artistic program organized by the 
-                        team IEEE SIT SB in the event IdEEEas. It is about finding 
-                        something interesting in an ordinary place. All you need is a 
-                        mobile phone and some creativity. We promise, you will have fun 
+                    <p style="font-size: x-large;text-align: justify;">“Good dreaming is what leads to good
+                        photographs.”
+                        So here comes the exciting and interesting event you have ever
+                        come across. Photographia is an artistic program organized by the
+                        team IEEE SIT SB in the event IdEEEas. It is about finding
+                        something interesting in an ordinary place. All you need is a
+                        mobile phone and some creativity. We promise, you will have fun
                         while participating in this event.</p>
-                        <!-- <p style="font-size: xx-large;text-align: justify;">Theme: It will be given on the event day. </p> -->
-                        <h2 style="text-align: left;">Theme:</h2><p style="font-size: x-large;text-align: justify;">It will be given on the event day. </p>
-                </div>  
+                    <!-- <p style="font-size: xx-large;text-align: justify;">Theme: It will be given on the event day. </p> -->
+                    <h2 style="text-align: left;">Theme:</h2>
+                    <p style="font-size: x-large;text-align: justify;">It will be given on the event day. </p>
+                </div>
                 <div>
                     <ul>
                         <li>
-                            <p style="font-size: x-large;text-align: justify;">Event starts at 10:00 AM on 27th June.</p>
-                        </li>
-                        <li><p style="font-size: x-large;text-align: justify;">Entry Fee: Rs.50/- per participant.</p>    </li>
-                        <li><p style="font-size: x-large;text-align: justify;">20% Discount will be provided to IEEE Membership holders.</p></li>
-                        <li><p style="font-size: x-large;text-align: justify;">All registered candidates will get the confirmation mail.</p></li>
-                        <li>
-                            <p style="font-size: x-large;text-align: justify;">Registration closes on 26th June at 12:00 AM.</p>
+                            <p style="font-size: x-large;text-align: justify;">Event starts at 10:00 AM on 27th June.
+                            </p>
                         </li>
                         <li>
-                            <p style="font-size: x-large;text-align: justify;">Participation e-certificate will be provided.</p>
-                        </li>                        
-                        <li>
-                            <p style="font-size: x-large;text-align: justify;">One can participate in any number of events. There won't be a time clash between events. </p>
+                            <p style="font-size: x-large;text-align: justify;">Entry Fee: Rs.50/- per participant.</p>
                         </li>
-                    </ul>                 
-                </div>   
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">20% Discount will be provided to IEEE
+                                Membership holders.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">All registered candidates will get the
+                                confirmation mail.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">Registration closes on 26th June at 12:00
+                                AM.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">Participation e-certificate will be
+                                provided.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">One can participate in any number of
+                                events. There won't be a time clash between events. </p>
+                        </li>
+                    </ul>
+                </div>
                 <div style="font-size: x-large;text-align: justify;">
                     <h2 style="text-align: left;">Rules:</h2>
                     <ul>
@@ -110,19 +132,24 @@
                     <ul>
                         <h2 style="text-align: left;">Selection Criteria:</h2>
                         <h3>First Round:</h3>
-                        <li>Registered participants will get a mail on the day of event in which they need to fill the google form within a specified time. An on spot theme will be given. Participant need to click a picture using cell phone out of the theme and upload the same within the given time.</li>
+                        <li>Registered participants will get a mail on the day of event in which they need to fill the
+                            google form within a specified time. An on spot theme will be given. Participant need to
+                            click a picture using cell phone out of the theme and upload the same within the given time.
+                        </li>
                         <h3>Second Round:</h3>
-                        <li>Top ten participants will be selected from the first round. They will be noticed through mail. Then a meeting will be scheduled over which the top 10 contestants need to explain their view on the content in their picture. The best explanation with the best photo will be rewarded</li>
-                        
+                        <li>Top ten participants will be selected from the first round. They will be noticed through
+                            mail. Then a meeting will be scheduled over which the top 10 contestants need to explain
+                            their view on the content in their picture. The best explanation with the best photo will be
+                            rewarded</li>
+                        <h2 style="text-align: center;">Sorry, Registrations closed</h2>
                     </ul>
-                </div>   
+                </div>
                 <div>
                     <a href="Brouchers/photographia_brochure1.pdf" target="_blank" class="btn btn-info btn-lg" download>
                         Download Brochure</a>
-                    <a href="https://www.yepdesk.com/photographia" target="_blank" class="btn btn-success btn-lg">
+                    <button class="btn btn-success btn-lg" disabled>
                         <span class="glyphicon glyphicon-log-in"></span> Register Here
-                      </a>
-                    <!-- <input type="submit" name="submit" value="Register Here" class="btn btn-success"><p><span class="glyphicon glyphicon-hand-left"></span></p> -->
+                        <!-- <input type="submit" name="submit" value="Register Here" class="btn btn-success"><p><span class="glyphicon glyphicon-hand-left"></span></p> -->
                 </div>
                 <div class="Finalone">
                     <div style="font-size: x-large;text-align: justify;">
@@ -131,17 +158,18 @@
                             <li>Prasanna - 9844910144</li>
                             <li>Preethu J - 9632972951</li>
                         </ul>
-                    </div>    
+                    </div>
                     <div><br>
                         <h4>Contact us at</h4>
                         <h5><i><a href="mailto:photographia.ideeeas@gmail.com">photographia.ideeeas@gmail.com</a></i>
                         </h5>
                     </div>
                 </div>
-                
-            </center>           
-            
+
+            </center>
+
         </div>
         <script src="Style/JS/event.js"></script>
-    </body>
+</body>
+
 </html>

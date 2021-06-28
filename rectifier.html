@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rectifier</title>
-        <link rel="stylesheet" type="text/css" href="Style/CSS/events.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script type="text/javascript"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <style>
-        @media only screen and (max-width:970px){
-            .container{
-                text-align: center;
-            }
-            #vid{
-                width: 360px;
-                height: 300px;
-            }
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectifier</title>
+    <link rel="stylesheet" type="text/css" href="Style/CSS/events.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    @media only screen and (max-width:970px) {
+        .container {
+            text-align: center;
         }
-    </style>
-    <body>
-         <div class="jumbotron-fluid justify-content-center cont"  >
-        <i class="fa fa-circle-thin fa-2x" aria-hidden="true" ></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+
+        #vid {
+            width: 360px;
+            height: 300px;
+        }
+    }
+</style>
+
+<body>
+    <div class="jumbotron-fluid justify-content-center cont">
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
         <div class="topnav nav nav-bar fixed-top" id="myTopnav">
             <a href="index.html">Home</a>
             <!-- <a href="registration.html">Register</a> -->
@@ -60,50 +66,69 @@
         <div class="container">
             <div>
                 <center>
-                    <video id="vid" width="1000" height="400" controls autoplay muted loop><source src="Videos/Rectifier.mp4" type="video/mp4"></video>
+                    <video id="vid" width="1000" height="400" controls autoplay muted loop>
+                        <source src="Videos/Rectifier.mp4" type="video/mp4">
+                    </video>
                 </center>
             </div>
             <br><br><br>
             <center>
                 <h2>RECTIFIER</h2>
                 <div>
-                    <p style="font-size: x-large;text-align: justify;">One of the major skills of an engineering student should be finding and resolving defects or
+                    <p style="font-size: x-large;text-align: justify;">One of the major skills of an engineering student
+                        should be finding and resolving defects or
                         problems within a system which hinders its functioning, and the same is tested in the
                         participants through this contest. The participants will be provided with a circuit with minor
                         faults, which they have to debug and get the appropriate output. Analysing electronic circuits
-                        and applying theoretical knowledge into a practical scenario is the main focus of this event.</p>
-                </div>  
+                        and applying theoretical knowledge into a practical scenario is the main focus of this event.
+                    </p>
+                </div>
                 <div>
                     <ul>
                         <li>
-                            <p style="font-size: x-large;text-align: justify;">Event starts at 11:30 AM on 27th June.</p>
-                        </li>
-                        <li><p style="font-size: x-large;text-align: justify;">Entry Fee: Rs.50/- per participant.</p>    </li>
-                        <li><p style="font-size: x-large;text-align: justify;">20% Discount will be provided to IEEE Membership holders.</p></li>
-                        <li><p style="font-size: x-large;text-align: justify;">All registered candidates will get the confirmation mail.</p></li>
-                        <li>
-                            <p style="font-size: x-large;text-align: justify;">Registration closes on 26th June at 12:00 AM.</p>
+                            <p style="font-size: x-large;text-align: justify;">Event starts at 11:30 AM on 27th June.
+                            </p>
                         </li>
                         <li>
-                            <p style="font-size: x-large;text-align: justify;">Participation e-certificate will be provided.</p>
-                        </li>                        
-                        <li>
-                            <p style="font-size: x-large;text-align: justify;">One can participate in any number of events. There won't be a time clash between events. </p>
+                            <p style="font-size: x-large;text-align: justify;">Entry Fee: Rs.50/- per participant.</p>
                         </li>
-                    </ul>                 
-                </div>   
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">20% Discount will be provided to IEEE
+                                Membership holders.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">All registered candidates will get the
+                                confirmation mail.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">Registration closes on 26th June at 12:00
+                                AM.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">Participation e-certificate will be
+                                provided.</p>
+                        </li>
+                        <li>
+                            <p style="font-size: x-large;text-align: justify;">One can participate in any number of
+                                events. There won't be a time clash between events. </p>
+                        </li>
+                    </ul>
+                </div>
                 <div style="font-size: x-large;text-align: justify;">
                     <h2 style="text-align: left;">Rules:</h2>
-                    <ul>                   
-                        <li>In the preliminary round, participants are given within a test that has to be solved in 30 minutes.</li>
+                    <ul>
+                        <li>In the preliminary round, participants are given within a test that has to be solved in 30
+                            minutes.</li>
                         <li>The questions comprise Multiple choice questions (MCQs) and Reasoning</li>
                         <li>The top five participants will be selected for finals.</li>
                         <li>The final round involves debugging of the given circuit.</li>
                         <li>Simulators:</li>
                         <ul>
                             <li><a href="https://www.tinkercad.com/" target="_blank">Tinkercad</a></li>
-                            <li><a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" target="_blank">Ltspice</a></li>
-                            <li><a href="https://www.multisim.com/content/9DqSigwz3dkSMgdXN8t4jT/online-simulator/open/" target="_blank">NI Simulator</a></li>
+                            <li><a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html"
+                                    target="_blank">Ltspice</a></li>
+                            <li><a href="https://www.multisim.com/content/9DqSigwz3dkSMgdXN8t4jT/online-simulator/open/"
+                                    target="_blank">NI Simulator</a></li>
                         </ul>
                         <!-- <li>Registration fees are ₹50.</li>                       
                         <li>20% Discount will be provided to IEEE Membership holders.</li>
@@ -112,16 +137,16 @@
                         <li>Abide by the rules made by the organiser.</li>
                         <li>Malpractice is not entertained.</li>
                         <li>Decisions of the judges and coordinators are final.</li>
+                        <h2 style="text-align: center;">Sorry, Registrations closed</h2>
                     </ul>
-                </div> 
-                 
+                </div>
+
                 <div>
                     <a href="Brouchers/Rectifier_Brochure.pdf" target="_blank" class="btn btn-info btn-lg" download>
                         Download Brochure</a>
-                    <a href="https://www.yepdesk.com/rectifier" target="_blank" class="btn btn-success btn-lg">
+                    <button class="btn btn-success btn-lg" disabled>
                         <span class="glyphicon glyphicon-log-in"></span> Register Here
-                      </a>
-                    <!-- <input type="submit" name="submit" value="Register Here" class="btn btn-success"><p><span class="glyphicon glyphicon-hand-left"></span></p> -->
+                        <!-- <input type="submit" name="submit" value="Register Here" class="btn btn-success"><p><span class="glyphicon glyphicon-hand-left"></span></p> -->
                 </div>
                 <div class="Finalone">
                     <div style="font-size: x-large;text-align: justify;">
@@ -130,17 +155,18 @@
                             <li>Manasa&nbsp; - 8073523435</li>
                             <li>Susheen - 7026708727</li>
                         </ul>
-                    </div>   
+                    </div>
                     <div><br>
                         <h4>Contact us at</h4>
                         <h5><i><a href="mailto:rectifier.ideeeas21@gmail.com">rectifier.ideeeas21@gmail.com</a></i>
                         </h5>
-                    </div> 
+                    </div>
                 </div>
-                
-            </center>           
-            
+
+            </center>
+
         </div>
         <script src="Style/JS/event.js"></script>
-    </body>
+</body>
+
 </html>
